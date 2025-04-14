@@ -1,63 +1,78 @@
-# Retail_Sales_Analysis
-Retail Sales Performance Analysis
-A data analysis project to explore and visualize retail sales performance using SQL and Power BI.  
-This project aims to uncover insights such as sales trends, regional performance, and product category breakdowns.
+## Retail Sales Performance Analysis 
+A data analysis project to explore and visualize retail sales performance using SQL, Python, and Power BI.
+This project aims to uncover actionable insights such as sales trends, regional performance, customer behavior, and product category profitability to inform data-driven decision-making.
 
 ## Objectives
-- Analyze sales data to identify key trends and insights
-- Build visual dashboards for business stakeholders
-- Track sales performance over time, by region and product category
+-- Analyze sales data to identify key trends, growth opportunities, and profitability drivers
+-- Build executive-level dashboards for business stakeholders
+-- Track sales performance over time, by region, customer, and product category
+-- Recommend strategies for improving revenue growth and operational efficiency
 
 ## Problem Statement
-### Background
-A global retail company operates across multiple regions and sales channels (both online and physical stores).  
+## Background
+A global retail company operates across multiple regions and sales channels (both online and physical stores).
+
 Leadership faces challenges in understanding:
-- Fluctuating sales performance across regions
-- Underperforming product categories
-- Identifying which channels are driving growth
-- Evaluating profitability to guide strategic decisions
-Despite having data, the information is siloed, unstructured, and lacks actionable insights.
+-- Fluctuating sales performance across regions and markets
+-- Underperforming product categories and declining customer segments
+-- Identifying growth drivers and profitable customer segments
+-- Evaluating profitability erosion from operational factors (e.g., shipping costs)
+-- Despite having data, the information is siloed, unstructured, and lacks actionable insights for decision-making.
 
-### Business Goal
+## Business Goal
 Develop a centralized Sales Performance Analysis solution to:
-- Uncover trends and patterns in sales performance
-- Identify top-performing regions and categories
-- Compare sales trends across time periods (monthly, quarterly, yearly)
-- Analyze channel performance (online vs. offline)
-- Evaluate profitability to recommend actionable strategies
+-- Uncover trends and patterns in sales performance (YoY, MoM)
+-- Identify top-performing regions, categories, and customers
+-- Analyze cross-selling opportunities and customer lifetime value
+-- Understand channel performance (online vs. offline) (pending channel data availability)
+-- Evaluate profitability drivers (shipping costs, product margins) to recommend actionable strategies
 
-### Business Questions to Answer
-1. **Sales Trends**
-   - How has total sales volume changed over time?
-   - Are there specific months or quarters with significant growth or decline?
-2. **Regional Analysis**
-   - Which regions are contributing most to sales and profitability?
-   - Are there regions consistently underperforming?
-3. **Product Category Performance**
-   - Which product categories generate the highest sales and profits?
-   - Are there low-performing or high-potential categories?
-4. **Channel Analysis**
-   - How do online sales compare to offline store sales?
-   - Is one channel more profitable than the other?
-5. **Profitability**
-   - What is the overall profit margin?
-   - Which regions or categories have the healthiest margins?
-6. **Growth Opportunities**
-   - Where should the company focus its marketing and pricing strategies?
-   - Are there regions or categories with growth potential?
+## Business Questions to Answer
+1. Sales Trends
+-- How has total sales volume changed over time?
+-- Are there specific months with significant growth or decline?
+SQL: total_sales_over_time.sql, month_sales.sql
 
-### Approach
-- **Data Acquisition & Cleaning:**  
-  Use publicly available retail sales data. Clean and prepare the data for analysis.
-- **Exploratory Data Analysis (EDA):**  
-  Use SQL to explore data, uncover patterns, and answer business questions.
-- **Dashboard Development:**  
-  Visualize findings in Power BI for executive-level consumption.
-- **Insights & Recommendations:**  
-  Summarize actionable insights and recommendations for business stakeholders.
+2. Regional & Market Analysis
+-- Which markets and regions are contributing most to sales and profitability?
+-- Are there consistently underperforming markets?
+SQL: market_analysis.sql
 
-### Expected Impact
-- Enhanced decision-making through data-driven insights
-- Identification of high-potential regions and categories
-- Improved channel strategy (online vs. offline)
-- Clear recommendations to improve profitability and sales growth
+3. Product Category Performance
+-- Which product categories generate the highest sales and profits?
+-- How do shipping costs impact category profitability?
+SQL: profitability.sql
+
+4. Customer Analysis & Growth Opportunities
+-- Who are our most valuable and loyal customers?
+-- Are there dormant or high-potential customers to target?
+SQL: customer_lifetime_value.sql
+
+5. Cross-Selling Opportunities
+-- Which products are frequently purchased together?
+-- How can we create bundled offers for better sales?
+SQL: product_analysis.sql
+
+6. Operational Efficiency
+-- Does shipping mode or order priority affect delivery speed?
+-- How can we optimize shipping for better customer satisfaction and efficiency?
+SQL: delivery_impact.sql
+
+## Approach
+1. Data Acquisition & Cleaning:
+Import and clean publicly available retail sales data using Python. Prepare MySQL database for analysis.
+
+2. Exploratory Data Analysis (EDA):
+Use advanced SQL techniques (CTEs, window functions, self-joins) to explore the data and answer complex business questions.
+
+3. Dashboard Development:
+Visualize findings in Power BI for executive-level consumption, with interactive filters and dynamic visual storytelling.
+
+4. Insights & Recommendations:
+Document actionable insights and data-driven recommendations to support business strategies.
+
+## Expected Impact
+-- Enhanced decision-making through deep, data-driven insights.
+-- Identification of high-potential markets, categories, and customer segments
+-- Improved operational strategies (shipping efficiency, customer targeting)
+-- Data-driven recommendations to improve profitability and accelerate growth
